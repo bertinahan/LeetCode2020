@@ -36,7 +36,7 @@ public class Anagrams438
   }
   public static List<Integer> findAnagrams(String s, String p) {
     List<Integer> result = new ArrayList<Integer>();
-    if (s.length() < p.length() || s == null || p == null) return result;
+    if (s.length() < p.length()) return result;
     int[] smap = new int[26];
     int[] pmap = new int[26];
     for(char x : p.toCharArray()) pmap[x-'a']++;
@@ -53,5 +53,23 @@ public class Anagrams438
     }
     if(isAnagram(smap, pmap)) result.add(s.length()-p.length());
     return result;
+  }
+
+    public static List<Integer> findAnagrams2(String s, String p) {
+      List<Integer> result = new ArrayList<Integer>();
+      if(s.length() < p.length()) return result;
+      int[] pmap = new int[26];
+      int[] smap = new int[26];
+      for(char x : p.toCharArray()) pmap[x-'a']++;
+      for(int i = 0; i < s.length(); i++)
+      {
+        smap[s.charAt(i) - 'a'] ++;
+        if (i >= p.length()) smap[s.charAt(i-p.length())-'a'] --;
+        if(isAnagram(smap, pmap))
+        {
+           result.add(i-p.length()+1);
+        }
+      }
+      return result;;
   }
 }
