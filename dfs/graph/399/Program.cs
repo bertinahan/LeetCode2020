@@ -10,17 +10,15 @@ namespace _399
       Console.WriteLine("Hello World!");
       IList<IList<string>> equations = new List<IList<string>>
       {
-          new List<string>{"a","b"},
-          new List<string>{"b","c"},
+          new List<string>{"x1","x2"},
+          new List<string>{"x2","x3"},
+          new List<string>{"x1","x4"},
+          new List<string>{"x2","x5"},
       };
-      var value = new double[]{2.0, 3.0};
+      var value = new double[]{3.0, 0.5, 3.4, 5.6};
       var query = new List<IList<string>>
       {
-          new List<string>{"a", "c"},
-          new List<string>{"b", "a"},
-          new List<string>{"a", "e"},
-          new List<string>{"a", "a"},
-          new List<string>{"x", "x"},
+          new List<string>{"x2", "x4"},
       };
       var result = CalcEquation(equations, value, query);
       foreach(var res in result)
@@ -43,7 +41,7 @@ namespace _399
         }
         if(dic.TryGetValue(pair[1], out var ele2))
         {
-          ele1.Add(pair[0], 1/values[i]);
+          ele2.Add(pair[0], 1/values[i]);
         }
         else
         {
@@ -65,13 +63,14 @@ namespace _399
     {
       if(!dic.TryGetValue(ele1, out var var1) || !dic.TryGetValue(ele2, out var var2)) return -1;
       if(dic[ele1].TryGetValue(ele2, out var target)) return target;
+      if(ele1.Equals(ele2)) return 1;
+      visited.Add(ele1);
       foreach(KeyValuePair<string, double> division in dic[ele1])
       {
-        if (visited.Contains(division.Key)) return -1;
-        visited.Add(division.Key);
+        if (visited.Contains(division.Key)) continue;
         var result = division.Value * dfs(division.Key, ele2, visited, dic);
-        if(result < 0) return -1;
-        return result;
+         if(result > 0) return result;
+        // return result;
       }
       return -1;
     }
