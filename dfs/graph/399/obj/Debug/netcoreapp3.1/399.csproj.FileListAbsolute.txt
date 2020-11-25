@@ -1,0 +1,13 @@
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.csprojAssemblyReference.cache
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.AssemblyInfoInputs.cache
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.AssemblyInfo.cs
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.csproj.CoreCompileInputs.cache
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\bin\Debug\netcoreapp3.1\399.exe
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\bin\Debug\netcoreapp3.1\399.deps.json
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\bin\Debug\netcoreapp3.1\399.runtimeconfig.json
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\bin\Debug\netcoreapp3.1\399.runtimeconfig.dev.json
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\bin\Debug\netcoreapp3.1\399.dll
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\bin\Debug\netcoreapp3.1\399.pdb
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.dll
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.pdb
+C:\Users\Bertina.Zhai\Project\LeetCode2020\dfs\graph\399\obj\Debug\netcoreapp3.1\399.genruntimeconfig.cache
