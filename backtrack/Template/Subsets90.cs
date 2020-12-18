@@ -1,4 +1,5 @@
-public class Solution {
+
+public class Subsets {
     public IList<IList<int>> SubsetsWithDup(int[] nums) {
         var res = new List<IList<int>>();
         Array.Sort(nums);
